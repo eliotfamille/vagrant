@@ -1,0 +1,3 @@
+vagrant init generic/ubuntu1804     # cree le unfichier vagrantfile avec ubuntu1804
+vagrant up                          # cree le vm dans votre outil de vm
+
