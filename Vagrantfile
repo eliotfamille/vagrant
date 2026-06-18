@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider :libvirt do |lv|
     lv.cpus = 2         # Nombre de cœurs CPU
     lv.memory = 2048    # Mémoire RAM en Mo
-    lv.default_prefix = "ubuntu"
+    lv.default_prefix = "eliot"
   end
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -78,4 +78,5 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
+  config.ssh.insert_key = false
 end
