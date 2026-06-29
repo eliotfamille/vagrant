@@ -14,5 +14,6 @@ Vagrant.configure("2") do |config|
     machine.vm.network "private_network",
       ip: "192.168.121.45",
       libvirt__network_name: "network"
+    machine.vm.provision "shell", path: "setup.sh"
   end
 end
